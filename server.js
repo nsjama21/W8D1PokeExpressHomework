@@ -22,6 +22,12 @@ app.get('/pokemon', (req, res) => {
   res.render("Index", { pokemon: pokemon });
 });
 
+app.get("/pokemon/:id", (req, res) => {
+  // res.send(fruits[req.params.indexOfFruit])
+  res.send(pokemon[req.params.id])
+
+})
+
 
 
 
